@@ -1,0 +1,23 @@
+package com.day9;
+
+class Result2 {
+
+    public static int viralAdvertising(int n) {
+	  int shared = 5;
+	  int liked=0;
+	  int comulative = 0;
+	  for (int i = 0; i < n; i++) {
+		  liked=shared/2;
+		  shared=liked*3;
+		  comulative+=liked;	  
+	  }
+    	return comulative;
+    }
+}
+
+public class ViralAdvertising {
+
+	public static void main(String[] args) {
+		System.out.println(Result2.viralAdvertising(5));
+	}
+}
